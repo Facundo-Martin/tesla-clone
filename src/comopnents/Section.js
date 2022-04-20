@@ -43,6 +43,9 @@ const ButtonGroup = styled.div`
   display: flex;
   margin-bottom: 30px;
   gap: 2rem;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 const LeftButtton = styled.div`
