@@ -17,10 +17,10 @@ const Header = () => {
         <a href="#">Model X</a>
         <a href="#">Model Y</a>
       </Menu>
-      <RightMenu onClick={() => setBurgerStatus(true)}>
+      <RightMenu>
         <a href="#">Shop</a>
         <a href="#">Tesla Account</a>
-        <CustomIcon />
+        <CustomOpen onClick={() => setBurgerStatus(true)} />
       </RightMenu>
       <BurgerNav show={burgerStatus}>
         <CloseWrapper>
@@ -95,7 +95,7 @@ const RightMenu = styled.div`
   }
 `;
 
-const CustomIcon = styled(MenuIcon)`
+const CustomOpen = styled(MenuIcon)`
   cursor: pointer;
 `;
 
